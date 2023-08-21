@@ -25,7 +25,9 @@ function generatePassword() {
     if(confirm("Would you like numbers in your password?")) {
       pre = pre.concat(numbers);
     };
-    console.log(pre)
+    if(pre.length === 0) {
+      alert("You must have atleast one type of character to generate a password. Please retry!")
+    }
   };
 
 }
