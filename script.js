@@ -16,6 +16,16 @@ function generatePassword() {
     if(confirm("Would you like uppercase characters in your password?")) {
       pre = pre.concat(uppercase);
     };
+    if(confirm("Would you like lowercase characters in your password?")) {
+      pre = pre.concat(lowercase);
+    };
+    if(confirm("Would you like special characters in your password?")) {
+      pre = pre.concat(special);
+    };
+    if(confirm("Would you like numbers in your password?")) {
+      pre = pre.concat(numbers);
+    };
+    console.log(pre)
   };
 
 }
