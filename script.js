@@ -27,9 +27,14 @@ function generatePassword() {
     };
     if(pre.length === 0) {
       alert("You must have atleast one type of character to generate a password. Please retry!")
+    } else {
+      for(var i = 0; i < passwordLength; i++) {
+        var randomIndex = Math.floor(Math.random() * pre.length);
+        post += pre[randomIndex]
+      }
     }
+    return post;
   };
-
 }
 
 function writePassword() {
